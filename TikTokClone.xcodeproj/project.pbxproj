@@ -22,6 +22,9 @@
 		FA0B6FA62C98454F0038D0C5 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0B6FA52C98454F0038D0C5 /* ProfileHeaderView.swift */; };
 		FA0B6FAA2C98499C0038D0C5 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0B6FA92C98499C0038D0C5 /* PostGridView.swift */; };
 		FA0B6FAC2C9849AE0038D0C5 /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0B6FAB2C9849AE0038D0C5 /* UserStatView.swift */; };
+		FA0B6FAE2C995F880038D0C5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0B6FAD2C995F880038D0C5 /* Post.swift */; };
+		FA0B6FB32C9960340038D0C5 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0B6FB22C9960340038D0C5 /* FeedViewModel.swift */; };
+		FA0B6FB52C997D360038D0C5 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0B6FB42C997D360038D0C5 /* CustomVideoPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		FA0B6FA52C98454F0038D0C5 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		FA0B6FA92C98499C0038D0C5 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		FA0B6FAB2C9849AE0038D0C5 /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
+		FA0B6FAD2C995F880038D0C5 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FA0B6FB22C9960340038D0C5 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		FA0B6FB42C997D360038D0C5 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 		FA0B6F852C9800610038D0C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA0B6FAD2C995F880038D0C5 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,8 +207,9 @@
 		FA0B6F912C9801970038D0C5 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				FA0B6F972C980DE10038D0C5 /* FeedView.swift */,
-				FA0B6F992C9812550038D0C5 /* FeedCell.swift */,
+				FA0B6FB12C9960060038D0C5 /* Views */,
+				FA0B6FB02C995FFA0038D0C5 /* ViewModel */,
+				FA0B6FAF2C995FF10038D0C5 /* Service */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -209,6 +217,7 @@
 		FA0B6F922C98019D0038D0C5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				FA0B6FB42C997D360038D0C5 /* CustomVideoPlayer.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -242,6 +251,30 @@
 				FA0B6FAB2C9849AE0038D0C5 /* UserStatView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		FA0B6FAF2C995FF10038D0C5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FA0B6FB02C995FFA0038D0C5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B6FB22C9960340038D0C5 /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA0B6FB12C9960060038D0C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B6F972C980DE10038D0C5 /* FeedView.swift */,
+				FA0B6F992C9812550038D0C5 /* FeedCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,10 +348,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0B6F982C980DE10038D0C5 /* FeedView.swift in Sources */,
+				FA0B6FB52C997D360038D0C5 /* CustomVideoPlayer.swift in Sources */,
 				FA0B6FA22C9833500038D0C5 /* NotificationCell.swift in Sources */,
 				FA0B6FA62C98454F0038D0C5 /* ProfileHeaderView.swift in Sources */,
 				FA0B6FAC2C9849AE0038D0C5 /* UserStatView.swift in Sources */,
 				FA0B6F9A2C9812550038D0C5 /* FeedCell.swift in Sources */,
+				FA0B6FB32C9960340038D0C5 /* FeedViewModel.swift in Sources */,
+				FA0B6FAE2C995F880038D0C5 /* Post.swift in Sources */,
 				FA0B6F7A2C9800480038D0C5 /* ContentView.swift in Sources */,
 				FA0B6FA02C9833430038D0C5 /* NotificationView.swift in Sources */,
 				FA0B6F782C9800480038D0C5 /* TikTokCloneApp.swift in Sources */,
